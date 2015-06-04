@@ -10,6 +10,22 @@
 
 @implementation FISFiboFinder
 
-//define methods here
+// HINT: the argument integer is equivalent to the n in the Fibonacci formula, and the result integer is n's value.
 
+//define methods here
+-(NSUInteger *)fibonaciNumberAtIndex:(NSUInteger *)fibIndex {
+    
+    NSInteger  firstNum = 0;
+    NSInteger  secondNum = 1;
+    NSInteger  answer = 1;
+
+    for(NSInteger i = 0; i < fibIndex.length; i++) {
+        answer = firstNum + secondNum;
+        firstNum = secondNum;
+        secondNum = answer;
+    }
+    
+    
+
+}
 @end
