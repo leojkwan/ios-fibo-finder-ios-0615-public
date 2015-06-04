@@ -7,6 +7,7 @@
 //
 
 #import "FISAppDelegate.h"
+#import "FISFiboFinder.h"
 
 @implementation FISAppDelegate
 

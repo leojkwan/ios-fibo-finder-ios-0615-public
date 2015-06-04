@@ -13,18 +13,19 @@
 // HINT: the argument integer is equivalent to the n in the Fibonacci formula, and the result integer is n's value.
 
 //define methods here
--(NSUInteger *)fibonaciNumberAtIndex:(NSUInteger *)fibIndex {
+-(NSUInteger)fibonacciNumberAtIndex:(NSUInteger)fibIndex {
     
-    NSInteger  firstNum = 0;
-    NSInteger  secondNum = 1;
-    NSInteger  answer = 1;
+    NSUInteger  firstNum = 1;
+    NSUInteger  secondNum = 0;
+    NSUInteger answer = 0;
 
-    for(NSInteger i = 0; i < fibIndex.length; i++) {
+    for(NSUInteger i = 0; i < fibIndex; i++) {
+        
         answer = firstNum + secondNum;
         firstNum = secondNum;
         secondNum = answer;
     }
-    
+    return answer;
     
 
 }
